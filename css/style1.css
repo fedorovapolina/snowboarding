@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Helvetica;
 }
 
 body{
@@ -19,7 +20,15 @@ body{
 /*fonts*/
 @font-face {
     font-family: ProximaNovaSemibold;
-    src: url("../fonts/");
+    src: url("../fonts/ProximaNova-Semibold.ttf");
+}
+@font-face {
+    font-family: ProximaNovaExtrabold;
+    src: url("../fonts/ProximaNova-Extrabld.ttf");
+}
+@font-face {
+    font-family: ProximaNovaRegular;
+    src: url("../fonts/ProximaNova-Regular.ttf");
 }
 
 
@@ -60,15 +69,10 @@ body {
 
     display: flex;
     justify-content: space-between;
+    font-family: ProximaNovaRegular;
 }
 .header__wr{
     font-size: 0;
-}
-.header__searchfield{
-   /* height: 100px;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;*/
 }
 .header__input{
     border: 0;
@@ -145,7 +149,7 @@ body {
     margin: 40px 75px;
 }
 .footer__titles{
-    font-weight: bold;
+    font-family: ProximaNovaSemibold;
     margin: 10px 0px;
 }
 .footer__lists{
@@ -177,11 +181,11 @@ body {
 }
 .snowboards__title{
     font-size: 30px;
-    font-weight: bold;
+    font-family: ProximaNovaExtrabold;
     text-align: center;
 }
 .snowboards__series{
-    font-weight: bold;
+    font-family: ProximaNovaSemibold;
     font-size: 13px;
     text-align: center;
 }
@@ -212,6 +216,7 @@ body {
 }
 .company__title{
     font-size: 33px;
+    font-family: ProximaNovaExtrabold;
 }
 .company__wr{
     width: 600px;
@@ -231,7 +236,7 @@ body {
 }
 .features__title{
     font-size: 33px;
-    font-weight: bold;
+    font-family: ProximaNovaSemibold;
     text-align: center;
 }
 .features__wr{
@@ -243,4 +248,33 @@ body {
 }
 .features__items{
     width: 220px;
+}
+.features__item-photos:hover{
+    box-shadow: 0 0 5px;
+    cursor: pointer;
+}
+.features__item-description{
+    font-family: ProximaNovaSemibold;
+}
+
+/*popup styles*/
+
+.blur {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+}
+.popup{
+    height: 100%;
+    width: 100%;
+}
+.popup-img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin:auto;
 }
