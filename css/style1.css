@@ -214,3 +214,26 @@ body {
 .company__p{
     margin-top: 40px;
 }
+
+
+/*features*/
+.features{
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.features__title{
+    font-size: 33px;
+    font-weight: bold;
+    text-align: center;
+}
+.features__wr{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 70px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.features__items{
+    width: 220px;
+}
