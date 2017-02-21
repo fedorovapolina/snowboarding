@@ -16,6 +16,13 @@ body{
 }
 
 
+/*fonts*/
+@font-face {
+    font-family: ProximaNovaSemibold;
+    src: url("../fonts/");
+}
+
+
 /* fixed bottom*/
 html,
 body {
@@ -231,8 +238,8 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 30px 70px;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    border-top: 1px solid #050709;
+    border-bottom: 1px solid #050709;
 }
 .features__items{
     width: 220px;
