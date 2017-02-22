@@ -2,56 +2,60 @@
     margin: 0;
     padding: 0;
     font-family: Helvetica;
+    flex-wrap: wrap;
 }
 
-body{
+body {
     /*padding-top: 100px;*/
 }
-.invisible{
+
+.invisible {
     min-height: 100px;
     background-color: transparent;
 }
 
-.upper{
+.upper {
     text-transform: uppercase;
 }
-
 
 /*fonts*/
 @font-face {
     font-family: ProximaNovaSemibold;
     src: url("../fonts/ProximaNova-Semibold.ttf");
 }
+
 @font-face {
     font-family: ProximaNovaExtrabold;
     src: url("../fonts/ProximaNova-Extrabld.ttf");
 }
+
 @font-face {
     font-family: ProximaNovaRegular;
     src: url("../fonts/ProximaNova-Regular.ttf");
 }
-
 
 /* fixed bottom*/
 html,
 body {
     height: 100%;
 }
+
 .wrapper {
     display: flex;
     flex-direction: column;
     height: 100%;
 }
+
 .content {
     flex: 1 0 auto;
 }
+
 .footer {
     flex: 0 0 auto;
 }
 
-
 /*header*/
-.header1{
+.header1 {
     position: fixed;
     top: 0;
     left: 0;
@@ -67,48 +71,57 @@ body {
     justify-content: space-between;
     font-family: ProximaNovaRegular;
 }
-.header__wr{
+
+.header__wr {
     /*font-size: 0;*/
 }
-.header__input{
+
+.header__input {
     border: 0;
     font-size: 13px;
 }
-.header__navitems{
+
+.header__navitems {
     color: white;
     text-decoration: none;
     margin-left: 20px;
     line-height: 56px;
 }
-.header__navitems:hover{
+
+.header__navitems:hover {
     text-decoration: none;
     color: gray;
 }
-.header__navitems:active{
+
+.header__navitems:active {
     text-decoration: none;
 }
-.header__nav{
+
+.header__nav {
     margin-left: 25px;
     height: 100px;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
 }
-.header__navwrap{
+
+.header__navwrap {
     display: flex;
     justify-content: flex-start;
 }
 
-.header__form{
+.header__form {
     display: flex;
     justify-content: flex-end;
 }
-.header__searchfield{
+
+.header__searchfield {
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
-.header__button{
+
+.header__button {
     color: white;
     height: 25px;
     background-color: #c7c7c7;
@@ -116,11 +129,12 @@ body {
     border: 0;
     font-size: 13px;
 }
-.header__input{
+
+.header__input {
     height: 25px;
 }
 
-.header__bag{
+.header__bag {
     height: 100px;
     display: flex;
     justify-content: space-around;
@@ -130,9 +144,8 @@ body {
     margin-left: 20px;
 }
 
-
 /*footer*/
-.footer{
+.footer {
     background-color: black;
     color: white;
     width: 100%;
@@ -141,37 +154,46 @@ body {
     justify-content: flex-start;
     flex-direction: column;
 }
-.footer-wrap{
+
+.footer-wrap {
     margin: 40px 75px;
 }
-.footer__titles{
+
+.footer__titles {
     font-family: ProximaNovaSemibold;
     margin: 10px 0px;
 }
-.footer__lists{
+
+.footer__lists {
     list-style-type: none;
 }
-.footer__top{
+
+.footer__top {
     display: flex;
     justify-content: space-between;
 }
-.footer__refs{
+
+.footer__refs {
     text-decoration: none;
     color: inherit;
 }
-.footer__refs:hover{
+
+.footer__refs:hover {
     color: gray;
     text-decoration: none;
 }
-.footer__bottom{
+
+.footer__bottom {
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
 }
-.footer__form{
+
+.footer__form {
     height: 25px;
 }
-.footer__go-button{
+
+.footer__go-button {
     color: white;
     height: 25px;
     background-color: #c7c7c7;
@@ -182,25 +204,27 @@ body {
 
 /*slider*/
 
-
 /*snowboards*/
-.snowboards{
+.snowboards {
     margin: 50px 0;
     color: black;
 }
-.snowboards__title{
+
+.snowboards__title {
     font-size: 30px;
     font-family: ProximaNovaExtrabold;
     text-align: center;
     margin-bottom: 20px;
 }
-.snowboards__series{
+
+.snowboards__series {
     font-family: ProximaNovaSemibold;
     font-size: 13px;
     text-align: center;
     margin-top: 20px;
 }
-.snowboards__img{
+
+.snowboards__img {
     position: relative;
     top: 0;
     bottom: 0;
@@ -210,10 +234,11 @@ body {
 }
 
 /*snowboards carousel*/
-.snowboards__wr{
+.snowboards__wr {
     height: 100%;
 }
-.snowboards__controls{
+
+.snowboards__controls {
     /*position: relative;
     top: 0;
     bottom: 0;
@@ -222,13 +247,14 @@ body {
     margin: auto;*/
     margin-top: 60px;
 }
-.snowboards__controls-right{
+
+.snowboards__controls-right {
     right: 0;
     left: auto;
 }
 
 /*company*/
-.company{
+.company {
     background-image: url('../images/company/bgimage.png');
     background-repeat: no-repeat;
     width: 100%;
@@ -238,7 +264,8 @@ body {
     flex-direction: column;
     justify-content: center;
 }
-.company:hover{
+
+.company:hover {
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     -ms-filter: grayscale(100%);
@@ -248,46 +275,53 @@ body {
     filter: gray; !* IE 6-9 *!*/
 
 }
-.company__title{
+
+.company__title {
     font-size: 33px;
     font-family: ProximaNovaExtrabold;
 }
-.company__wr{
+
+.company__wr {
     width: 600px;
     margin-left: 150px;
     line-height: 2;
 }
-.company__p{
+
+.company__p {
     margin-top: 40px;
 }
 
-
 /*features*/
-.features{
+.features {
     color: black;
     margin-top: 20px;
     margin-bottom: 50px;
 }
-.features__title{
+
+.features__title {
     font-size: 33px;
     font-family: ProximaNovaSemibold;
     text-align: center;
 }
-.features__wr{
+
+.features__wr {
     display: flex;
     justify-content: space-between;
     padding: 30px 70px;
     border-top: 1px solid #050709;
     border-bottom: 1px solid #050709;
 }
-.features__items{
+
+.features__items {
     width: 220px;
 }
-.features__item-photos:hover{
+
+.features__item-photos:hover {
     box-shadow: 0 0 5px;
     cursor: pointer;
 }
-.features__item-description{
+
+.features__item-description {
     font-family: ProximaNovaSemibold;
 }
 
@@ -300,20 +334,22 @@ body {
     -ms-filter: blur(5px);
     filter: blur(5px);
 }
-.popup{
+
+.popup {
     position: fixed;
     top: 0;
     right: 0;
     min-height: 100%;
     width: 100%;
 }
-.popup-img{
+
+.popup-img {
     position: absolute;
     left: 0;
     top: 0;
     bottom: 0;
     right: 0;
-    margin:auto;
+    margin: auto;
     box-shadow: 0 0 5px;
     cursor: pointer;
 }
